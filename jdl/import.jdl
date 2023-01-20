@@ -1,0 +1,18 @@
+application {
+	config {
+      baseName mavenPostgre
+      packageName com.mycompany.myapp
+      devDatabaseType postgresql
+      prodDatabaseType postgresql
+      enableTranslation false
+      languages [fr]
+      nativeLanguage fr
+      clientFramework no
+    }
+    entities *
+}
+
+entity Activity {
+	title String required,
+    destination String unique,
+}
